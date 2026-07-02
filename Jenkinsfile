@@ -24,8 +24,7 @@ bat "docker build -t adaptive-learning-devops ."
 stage('Deploy Container') {
 steps {
 bat "docker rm -f adaptive-learning-devops-container || echo No existing container"
-bat "docker run -d --name adaptive-learning-devops-container -p 3000:3000
-adaptive-learning-devops"
+bat "docker run -d --name adaptive-learning-devops-container -p 3000:3000 adaptive-learning-devops"
 }
 }
 }
