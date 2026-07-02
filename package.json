@@ -1,0 +1,32 @@
+{
+  "name": "adaptive-learning-devops",
+  "version": "1.0.0",
+  "description": "DevOps implimentation for Adaptive learning system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sp-muhammadbadrulhisyam-sys/adaptive-learning-devops.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sp-muhammadbadrulhisyam-sys/adaptive-learning-devops/issues"
+  },
+  "homepage": "https://github.com/sp-muhammadbadrulhisyam-sys/adaptive-learning-devops#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  }
+}
