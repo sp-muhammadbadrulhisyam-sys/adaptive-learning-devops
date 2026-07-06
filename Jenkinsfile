@@ -37,8 +37,7 @@ bat 'timeout /t 5'
 bat 'if exist jmeter-results.jtl del jmeter-results.jtl'
 bat 'if exist jmeter-report rmdir /s /q jmeter-report'
 
-bat '%JMETER_HOME%\\bin\\jmeter.bat -n -t adaptive-learning-devops.jmx -l jmeter-
-results.jtl -e -o jmeter-report'
+bat '%JMETER_HOME%\\bin\\jmeter.bat -n -t adaptive-learning-devops.jmx -l jmeter-results.jtl -e -o jmeter-report'
 
 }
 }
