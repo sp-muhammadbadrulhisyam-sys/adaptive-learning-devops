@@ -1,8 +1,5 @@
 pipeline {
 agent any
-environment {
-JMETER_HOME = 'C:\\Users\\hisya\\Desktop\\apache-jmeter-5.6.3'
-}
 stages {
 stage('Install Dependencies') {
 steps {
@@ -32,14 +29,9 @@ bat 'docker run -d --name al-devops-container -p 3000:3000 al-devops'
 }
 stage('Run JMeter Performance Test') {
 steps {
-
-bat 'timeout /t 5'
-bat 'if exist jmeter-results.jtl del jmeter-results.jtl'
-bat 'if exist jmeter-report rmdir /s /q jmeter-report'
-
-bat '%JMETER_HOME%\\bin\\jmeter.bat -n -t adaptive-learning-devops.jmx -l jmeter-results.jtl -e -o jmeter-report'
-
+bat 'run-jmeter.bat'
 }
 }
 }
+
 }
